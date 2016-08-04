@@ -1,449 +1,97 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        
-        <title>wire frame to page</title>
-        
-        <link rel="stylesheet" type="text/css" href="css/LAYOUT.css"/>
-        
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" type="text/css">      
+        <title>Navigation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-       
+        <!--stylesheet goes here-->
+        <style>
+            #header{
+                height: 3em;
+                background-color: darkblue;
+            }
+            nav{
+                min-height: 30px;
+                padding: 15px;
+                background-color: lightgray;
+            }
+                .navbar-default .navbar-nav > .active > a{
+                    color: white;
+                    background: red;
+                    box-shadow: 0 3px 0 0 darkred;
+                    border-radius: 3px;
+                } 
+                .navbar-default .navbar-nav > .active > a:hover, 
+                .navbar-default .navbar-nav > .active > a:focus {
+                    color: black;
+                    background: gray;
+                    box-shadow: 0 3px 0 0 darkgray;
+                    border-radius: 3px;
+                }
+                .navbar-nav > li > a{
+                    /* adjust padding for height*/
+                    padding-top: 10px; 
+                    padding-bottom: 8px;
+                }
+            #content{
+                height:50px;
+                background-color: darkblue;
+            }
+        </style>
     </head>
     <body>
-        <div class="container">
-            <!--header section starts here-->
-            <div id="header" class="row">
-            <div class="col-md-4 col-lg-4 col-sm-4 top-header vertical-center">
-                <ul class="list-inline">
-                    <li><img src="image/bbc-blocks-light.png" alt="BBC image"/></li>              
-                    <li><a href="#" class="w">Text only</a></li>
-                    <li><a href="#" class="w">Help</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-4 top-header vertical-center">
-                <form role="form">
-                <div class="input-group">
-                    <input type="text" class="form-control input-sm">
-                    <span class="input-group-btn">
-                       <button class="btn btn-default btn-sm" type="submit"><span class="glyphicon glyphicon-search"></span>Search</button>
-                    </span>
-                </div>
-                </form>
-            </div>
-            <div class="col-md-4 col-lg-4 col-sm-4 top-header text-center vertical-center">
-                    <button type="button" onclick="window.location='#'" class="btn btn-success input-sm">Explorer the BBC</button>                    
-            </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-2 col-md-2 col-sm-2 username">
-                    Hello <strong>User name</strong>                
-                </div> 
-                <div class="col-lg-8 col-md-8 col-sm-8 username">
-                    <a href="#">I'm not username</a>
-                </div>
-                <div class="col-lg-2 col-md-2 col-sm-2 text-left username">
-                    <strong>sign out</strong>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-8 mainheader">
-                    <span class="l">h2g2</span>the guide to life, the universe and everything
-                </div>
-             
-                <div class="col-lg-4 col-md-4 col-sm-4 mainheader vertical-center">
-                    <h4>search h2g2</h4>
-                    <input type="text" class="input-sm">
-                    <button class="btn-default btn-sm" type="submit">go</button>
-
-                </div>
-            </div>
-            <!--header section ends here-->
-            <!--navigation section starts here-->
-            <div id="nav" class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 navcontainer ">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Browse h2g2</a></li>
-                        <li><a href="#">My space</a></li>
-                        <li><a href="#">Peer Review</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Write an entry</a></li>
-                        <li><a href="#">Who's online</a></li>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Feedback</a></li>
-                        <li><a href="#">RSS feeds</a></li>
-                    </ul>                    
-                </div>
-            </div>
-            <!--navigation section ends here-->
-            <!--content section starts here-->
-            <div class="row main-section" id="mainsection">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-            <!--artical section starts here-->        
-                    <div class="row" id="artical">
-                        <div class="col-lg-8 col-md-8 col-sm-8 artical">
-                            <div class="row">
-                                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 main-artical">
-     <!-- Carousel indicators -->                              
-             <!-- First sliders --> 
-                                    <div id="custom_carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-                                 <!-- Wrapper for slides -->
-                                        <div class="carousel-inner">
-                                                <div class="item active">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4  main-artical-display"><img src="image/4.jpg" class="img-responsive" alt="1"/></div>
-                                                            <div class="col-md-3 col-lg-3 col-sm-3  main-artical-display">
-                                                                <h2>Mohtashim M.</h2>
-                                                                <p>Mohtashim is an MCA from AMU (Aligarah) and a Project Management Professional. He has more than 17 years of experience in Telecom and Datacom industries covering complete SDLC. He is managing in-house innovations, business planning, implementation, finance and the overall business development of Tutorials Point.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 main-artical-display"><img src="image/3.jpg" class="img-responsive"></div>
-                                                            <div class="col-md-3 col-lg-3 col-sm-3  main-artical-display">
-                                                                <h2>Gopal K Verma</h2>
-                                                                <p>Gopal is an MCA from GJU (Hisar) and a Cisco Certified Network Professional. He has more than 11 years of experience in core data networking and telecommunications. He develops contents for Computer Science related subjects. He is also involved in developing Apps for various Mobile devices.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 main-artical-display"><img src="image/2.jpg" class="img-responsive"></div>
-                                                            <div class="col-md-3 col-lg-3 col-sm-3  main-artical-display">
-                                                                <h2>Omer Mohammed</h2>
-                                                                <p>Omer has 10+ years of experience, with 4+ years in project management overlapping with 8+ years in Design. He has PMP, 6 Sigma Green Belt and Intellectual Property credentials. Across his career, he has worked in designing training modules, team building events, and driving teams towards results aligned with strategic objectives.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="item">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4 main-artical-display"><img src="image/1.jpg" class="img-responsive"></div>
-                                                            <div class="col-md-3 col-lg-3 col-sm-3  main-artical-display">
-                                                                <h2>Kiran Kumar Panigrahi</h2>
-                                                                <p>Kiran has more than 7 years of experience as a content developer and technical editor. He works with a team of technical writers to review the contents posted on the website and develops supplementary study material for the existing tutorials.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- End Item -->
-                                        </div>
-                    <!-- End Carousel Inner -->
-                    <!-- scroll ends-->                             
-                                            <div class="controls">
-                                                <ul class="nav">
-                                                    <li data-target="#custom_carousel" data-slide-to="0" class="active">
-                                                        <a href="#"><img src="image/4.jpg" alt="image1"/><small>Mohtashim M.</small></a>
-                                                    </li>
-                                                    <li data-target="#custom_carousel" data-slide-to="1">
-                                                        <a href="#"><img src="image/3.jpg" alt="image2"/><small>Gopal K Verma</small></a>
-                                                    </li>
-                                                    <li data-target="#custom_carousel" data-slide-to="2">
-                                                        <a href="#"><img src="image/2.jpg" alt="image3"/><small>Omer Mohammed</small></a>
-                                                    </li>
-                                                    <li data-target="#custom_carousel" data-slide-to="3">
-                                                        <a href="#"><img src="image/1.jpg" alt="image4"/><small>Kiran Kumar Panigrahi</small></a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                    </div>
-                                        <script>
-                                            $(document).ready(function (ev) {
-                                            $('#custom_carousel').on('slide.bs.carousel', function (evt) {
-                                            $('#custom_carousel .controls li.active').removeClass('active');
-                                            $('#custom_carousel .controls li:eq(' + $(evt.relatedTarget).index() + ')').addClass('active');
-                                             })
-                                            });
-                                        </script>
-                                </div>
-                            </div>                                                             
-                        </div>    
-                        <div class="col-lg-3 col-md-3 col-sm-3 side-artical">    
-                            <div class="col-lg-11 col-md-11 col-sm-11 side-artical1">
-                                <div><h3 class="m-t-1">Ask h2g2</h3>
-                                    <p>What you are asking now:</p>
-                                    <ul class="m-l-1">
-                                        <li>What constitutes a contract?</li>
-                                        <li>Reading/read 'The God Delusion' by Richard Dawkins?</li>
-                                        <li>Search for the Secret Smiley</li>
-                                        <li>Any female MPs you WOULD vote for?</li>
-                                        <li>The problem of copyright?</li>
-                                        <li>Guitar hero</li>
-                                        <li>What can we blame 2legs for?</li>
-                                        <li>"What news story has caught your attention today?" thread</li>
-                                        <li>The Apprentice 2009</li>
-                                    </ul>
-                                </div>      
-                            </div>
-                            <div class="col-lg-11 col-md-11 col-sm-11 side-artical2">
-                                <div><h3 class="m-t-1">Don't panic!</h3></div>
-                            </div>
-                        </div>              
-                    </div>
-            <!--artical section ends here-->   
+        <!--header section starts here-->
+        <div id="header"></div>
+        <!--header section ends here-->
+        
+        <!--navigation section starts here-->
+        <nav class="navbar-default" role="navigation">
+            <div class="container">
                 
-            <!--slider section starts here-->
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-8 slider">
-            <!--The main div for carousel-->
-                    <h3 class="m-t-2">Infinite improbability drive</h3>
-                    <div class="row"><div class="col-lg-12 col-md-12 col-sm-12 slider-display">
-                        <div class="carousel slide row" data-ride="carousel" data-type="multi" data-interval="3500" id="fruitscarousel">
-
-                            <div class="carousel-inner ">
-                                <div class="item active ">
-                                    <div class="col-md-3 col-sm-4 col-xs-12 "><a href="#"><img src="image/1.jpg" class="img-responsive" alt="image1"/>1</a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="image/2.jpg" class="img-responsive" alt="image2"/>2</a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="image/3.jpg" class="img-responsive" alt="image3"/>3</a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="image/4.jpg" class="img-responsive" alt="image4"/>4</a></div>
-                                </div>
-                                <div class="item">
-                                    <div class="col-md-3 col-sm-4 col-xs-12"><a href="#"><img src="image/5.jpg" class="img-responsive" alt="image5"/>5</a></div>
-                                </div>
-
-                            </div>
-
-                            <a class="left carousel-control" href="#fruitscarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                            <a class="right carousel-control" href="#fruitscarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a> 
-
-                        </div></div></div>
-            <!--slider script begins-->
-                        <script>
-                        jQuery(document).ready(function() {
-
-                                jQuery('.carousel[data-type="multi"] .item').each(function(){
-                                        var next = jQuery(this).next();
-                                        if (!next.length) {
-                                                next = jQuery(this).siblings(':first');
-                                        }
-                                        next.children(':first-child').clone().appendTo(jQuery(this));
-
-                                        for (var i=0;i<2;i++) {
-                                                next=next.next();
-                                                if (!next.length) {
-                                                        next = jQuery(this).siblings(':first');
-                                                }
-                                                next.children(':first-child').clone().appendTo($(this));
-                                        }
-                                });
-
-                        });
-                        </script>
-                        
-                    </div>
-            <!--slider script ends-->
-            <!--slider section ends here-->
-                    <!--online section starts here-->
-                    <div class="col-lg-3 col-md-3 col-sm-3 online">
-                        <h3 class="m-t-2">Who's online</h3>
-                        <ul class="list-inline">
-                            <li> view by </li>
-                            <li><a class="button" href="HTML/online-id.html" target="iframe1"> ID </a></li>
-                            <li><a class="button" href="image/2.jpg" target="iframe1"> Name </a></li>
-                        </ul>    
-                        <div class="row">
-                            
-                            <div class="col-lg-12 col-md-12 col-sm-12 embed-responsive embed-responsive-16by9 m-t--2">
-                                <iframe class="embed-responsive-item img-responsive" src="image/1.jpg" height="10" name="iframe1"></iframe>
-                            </div>
-                        </div>       
-                               
-                    </div>
-                    <!--online section ends here-->
-                </div>
-                    <!--work section starts here-->
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 work">
-                        <div id="work-progress">
-                            <h3 class="m-t-2">Work in Progress</h3>
-                            <p class="text-right m-0">About Peer review</p><br/>
-                            <div class="m-t--2 ">Most recent guide entries currently under review:</div>
-                            <ul  class="m-l-1">
-                                <li>The Screwfix Catalogue</li>
-                                <li>By Golly it's the history of Golliwogs</li>
-                                <li>Purple</li>
-                                <li>Fire-And What Can Be Done About it</li>
-                                <li>Endometriosis and Adenomyosis</li>
-                                <li>Help Page Update - *Peer Review*</li>
-                                <li>The Swastika</li>
-                            </ul>    
-                                <span class="f-r m-t-3">All guide entries under review</span>
-                        </div>
-                        
-                    </div>
-                    <!--work section ends here-->
-                    <!--announcement section starts here-->
-                    <div class="col-lg-4 col-md-4 col-sm-4 announcement">
-                        <div id="announcement">
-                            <h3 class="m-t-2">Announcements</h3>
-                            <h5><strong>Guidelines for Elections, 4th June 2009</strong></h5>
-                            <p class="m-t--2">05 May 2009 09:53<br/>
-                                Elections for the European Parliament, the Welsh Assembly and local government in 
-                                England will take place on Thursday, 4 June, 2009 ...</p>
-                        
-                            <h5><strong>Secret Smily/Edited Guide</strong></h5>
-                            <p class="m-t--2">28 April 2009 14:49<br/>
-                                Now that the other ones are up for the Secret Smiley... We've got some h2g2 
-                                merchandise for the first person who guesses what it is ...</p>
-                            <span class="f-r m-t--2">more announcements</span>
-                        </div>
-                    </div>
-                     <!--announcement section ends here-->
-                      <!--entry section starts here-->
-                    <div class="col-lg-3 col-md-3 col-sm-3 entry">
-                        <div id="notes-entry">
-                            <h3 class="m-t-2">Write an entry</h3>
-                            <p class="m-t-2">Text about writing an entry and link to write an entry page.</p>
-                        </div>                        
-                    </div>
-                    <!--entry section ends here-->  
-                </div>
-                    <!--external link starts here-->
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-sm-8 external">
-                        <h3 class="m-t-2">External link</h3>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6 m-t-3">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 ex1"></div>
-                                        </div>                                        
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8">
-                                        <ul>
-                                            <li>Pheloxi's Memorial Wall</li>
-                                            <li>A What? A Moritat?</li>
-                                            <li>Birmingham Mini-Meet Report</li>
-                                            <li>The UnderGuide Presents</li>
-                                            <li>'The Date'</li>
-                                            <li>'Three Times and True'</li>
-                                        </ul>
-                                    </div>
-                                </div>                                
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6 m-t-3">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="row">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 ex2"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-8 col-md-8 col-sm-8">
-                                        <ul>
-                                            <li>Douglas Adams Continuum</li>
-                                            <li>ZZ9 Plural Z Alpha</li>
-                                            <li>Stephen Fry</li>
-                                            <li>h2g2 on Twitter</li>
-                                            <li>h2g2 on Wikipedia</li>
-                                            <li>h2g2 on Facebook</li>
-                                        </ul>                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                    <!--external section ends here-->
-                    <!--feedback section starts here-->
-                    <div class="col-lg-3 col-md-3 col-sm-3 feedback">
-                        <div>
-                            <h3 class="m-t-2">Feedback</h3>
-                            <p> For any and all feedback about h2g2. Whether you want to complain, 
-                                make a suggestion or ask about the future.<p>
-                            <ul class="m-l-1">
-                                <li>Editorial Feedback</li>
-                                <li>The Community Soapbox
-                                <li>Design Feedback</li>
-                                <li>Technical Feedback</li>
-                                <li>The GuideML Clinic</li>
-                                <li>Feature Suggestions</li>
-                                <li>Bug Reports</li>
-                                <li>Anything else..</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--feedback section ends here-->    
-                </div>    
-                <div class="row">
-                    <!--description section starts here-->
-                    <div class="col-lg-11 col-md-11 col-sm-11 description">
-                        <div id="descreption">
-                            <div><strong>Disclaimer </strong></div><p>Most of the content on h2g2 is created by h2g2's Rasearchers, 
-                                who are members of the public.The views expressed are theirs and unless specially 
-                                stated are not those of the BBC. The BBC is not responsible for the content of any 
-                                external sites referenced. In the event you consider anything on this page to be in
-                                breach of the site's House Rules, please click here. For any other comments, please 
-                                click on the Feedback button above.<p>
-                        </div>   
-                    </div>
-                     <!--description section starts here-->
-                </div>    
-                </div><!--whole content ends in this line mean col-->              
-            </div>
-            <!--content section ends here-->
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">                  
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+                </button>
             
-            <!--footer section starts here-->
-            <div class="row footer" id="footer">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 m-t-3">
-                            <div><img src="IMAGE/bbc-blocks-light.png" alt="image"/>
-                                <span class="large">&copy; MMIX</span></div>
-                                     <p class="m-t-3">The BBC is not responsible for the<br/>
-                                         content of external internet sites.</p> 
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <ul class="text-right">
-                                <li><a href="#">Reception Adivce</a></li>
-                                <li><a href="#">BBC Trust</a></li>
-                                <li><a href="#">Press Office</a></li>
-                                <li><a href="#">Licence Fee</a></li>
-                            </ul>                           
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <ul class="text-right">
-                                <li><a href="#">BBC Help</a></li>
-                                <li><a href="#">Accessibility Help</a></li>
-                                <li><a href="#">Jobs</a></li>
-                            </ul>                            
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-2">
-                            <ul class="text-right">
-                                <li><a href="#">About the BBC</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Privacy & Cookies</a></li>
-                            </ul>                            
-                        </div>                        
-                    </div>
-                </div>                     
+                <a class="navbar-brand navbar-left" href="#">BRAVURA LOGO</a>
+                </div>
+                <!-- Collection of navigation links for toggling -->
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Service<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Application Services</a></li>
+                            <li><a href="#">Mobile Application</a></li>
+                            <li><a href="#">IT Infrastructure</a></li>
+                            <li><a href="#">IT Enabled</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Infrastructure</a></li>
+                    <li><a href="#">Partner</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact Us</a></li>                    
+                </ul>
+                </div>
+                <!-- end of navbar-collapse -->
             </div>
-            <!--footer ends here-->
-        </div>
+            <!-- end of container -->
+        </nav>
+        <!--navigation section ends here-->
+        
+        <!--content section starts here-->
+        <div id="content"></div>
+        <!--content section starts here-->
+    
+        <script type = "text/javascript"src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>
